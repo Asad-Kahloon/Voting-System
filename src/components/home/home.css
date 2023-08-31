@@ -1,0 +1,25 @@
+.home-container{
+    margin: 7% 0;
+    max-width: 90%;
+    height: 60vh;
+}
+.home-container .home-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.home-container .home-text p{
+    color: #868686;
+    letter-spacing: 2px;
+    word-spacing: 3px;
+}
+.home-container .home-logo{
+    height: 90%;
+    background-image: url('/public/img/home-logo.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    transition: 0.5s;
+}
+.home-container .home-logo:hover{
+    transform: scale(1.1);
+}

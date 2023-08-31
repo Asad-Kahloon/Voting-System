@@ -1,0 +1,60 @@
+.signup-main-container{
+  display: flex;
+  justify-content: center; 
+
+}
+.signup-main{
+margin: 5% 0;
+text-align: center;
+display: flex;
+width: 60%;
+align-items: center;
+flex-direction: column;
+border: none;
+border-radius: 5px;
+background: linear-gradient(to right, #363636, #141414);
+padding: 10px 5px;
+}
+.signup-main-container .signup-main form{
+width: 90%;
+display: flex;
+flex-direction: column;
+}
+.signup-main-container .signup-main h2{
+color: white;
+margin-top: 10%;
+}
+.signup-main-container .signup-main form input,
+.signup-main-container .signup-main form select,
+.signup-main-container .signup-main form option,
+.signup-main-container .signup-main form button{
+display: block;
+margin:3% 5%;
+padding: 3%;
+color:#323232 ;
+border: 1px solid #ccc;
+border-radius: 10px;
+}
+.signup-main-container .signup-main form button{
+  background: #151515;
+color: #fff;
+border: none;
+cursor: pointer;
+transition:0.5s;
+}
+.signup-main-container .signup-main form .signin-btns:hover{
+  background: #323232;
+}
+.signup-main-container .signup-main form p{
+color: white;
+transition: 0.5s;
+margin-bottom: 10%;
+}
+.signup-main-container .signup-main form p .link{
+  color: #fff;
+  font-weight: 900;
+  text-decoration: none;
+}
+.signup-main-container .signup-main form p .link:hover{
+  color: #6e6d6d;
+}
