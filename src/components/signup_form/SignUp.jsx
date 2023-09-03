@@ -1,11 +1,9 @@
 import React, { useState} from "react";
 import {Link} from 'react-router-dom'
-import { useNavigate } from "react-router-dom";
 import './SignUp.css'
 
 const SignUp = () => {
 
-  const navigate= useNavigate();
 
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
@@ -41,45 +39,62 @@ const SignUp = () => {
   }
   
     return (
-      <div className='container signup-main-container'>
-        <div className="signup-main">
-        <h2>SignUp Form</h2>
-        <form className='signup-form' onSubmit={handleSignup}>
-          <input
-            type="email"
-            placeholder='Email'
-            value={email}
-            onChange={handleChange(setEmail)}
-            required
-          />
-          <input
-            type="password"
-            value={password}
-            placeholder="password"
-            onChange={handleChange(setPassword)}
-            required
-          />
-           <input
-            type="tel"
-            placeholder="Phone No"
-            value= { phone }
-            onChange={handleChange(setPhone)}
-          />
-           <select
-            value={gender}
-           onChange={handleChange(setGender)}
-            >
-            <option value="">Selet Gender</option>
-            <option value="male">Male</option>
-            <option value="female">Female</option>
-             value<option value="other">Other</option>
-            </select>
-  
-          <br />
-          <button className="signup-btns" type="submit">Sign Up</button>
-          <p>Already have an account? <Link className="link" to='/login'>Login</Link></p>
-        </form>
-        </div>
+      <div className="signup_body">
+          <div className='signup_form_container'>
+                  <div className="signup_form">
+                        <h2> SignUp Form </h2>
+                        <form onSubmit={handleSignup}>
+                              <div className="input_group">
+                                    <input
+                                      type="email"
+                                      placeholder='Email'
+                                      value={email}
+                                      onChange={handleChange(setEmail)}
+                                      required
+                                      className="input_text"
+                                    />
+                              </div>
+                              <div className="input_group">
+                                    <input
+                                      type="password"
+                                      value={password}
+                                      placeholder="password"
+                                      onChange={handleChange(setPassword)}
+                                      required
+                                      className="input_text"
+                                    />
+                              </div>
+                              <div className="input_group">
+                                    <input
+                                      type="tel"
+                                      placeholder="Phone No"
+                                      value= { phone }
+                                      onChange={handleChange(setPhone)}
+                                      className="input_text"
+                                    />
+                              </div>
+                              <div className="input_group">
+                                    <select
+                                      value={gender}
+                                      onChange={handleChange(setGender)}
+                                    className="input_text signup_select"
+                                    >
+                                        <option value="">Selet Gender</option>
+                                        <option value="male">Male</option>
+                                        <option value="female">Female</option>
+                                        <option value="other">Other</option>
+                                    </select>
+                              </div>
+                              <div class="button_group signup_button">
+                                    <button type="submit">Register</button>
+                              </div>
+                          </form>
+                          <div class="below_form">
+                            <Link className="link">Forgot Password ?</Link>
+                            <Link className="link" to='/login'>Login</Link>
+                          </div>
+                </div>
+          </div>
       </div>
     );
   };
