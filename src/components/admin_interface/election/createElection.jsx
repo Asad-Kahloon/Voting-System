@@ -1,5 +1,5 @@
 import React,{useState} from 'react'
-import './admin.css'
+import './createElection.css'
 import { useNavigate } from 'react-router-dom';
 
 

@@ -1,21 +1,27 @@
 import React, { useState } from "react";
 import "./contact.css";
+
+
 const Contact = () => {
+  
   const [data, setData] = useState({
     Name: "",
     Email: "",
     Subject: "",
     Message: "",
   });
+
   let Name, Value;
   const input = (e) => {
     Name = e.target.name;
     Value = e.target.value;
     setData({ ...data, [Name]: Value });
   };
+  
   const sendData = async (e) => {
     const { Name, Email, Subject, Message } = data;
     e.preventDefault();
+
     const options = {
       method: "POST",
       headers: {
@@ -33,13 +39,16 @@ const Contact = () => {
       "https://react-contactform-f5655-default-rtdb.firebaseio.com/Message.json",
       options
     );
+
     console.log(send);
+
     if (send) {
       alert("Message Sent !");
     } else {
       alert("something went wrong");
     }
   };
+
   return (
     <>
       <div className="contact">

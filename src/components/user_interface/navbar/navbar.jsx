@@ -19,7 +19,7 @@ const Navbar = () => {
                             <Link className="nav-link link" to="/" >Home</Link>
                             </li>
                             <li className="nav-item">
-                                <Link className="nav-link link" to="/about">About</Link>
+                                <Link className="nav-link link" to="/">About</Link>
                             </li>
                             <li className="nav-item dropdown">
                                 <Link className="nav-link link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -32,14 +32,14 @@ const Navbar = () => {
                                 </ul>
                             </li>
                             <li className="nav-item">
-                                <Link className="nav-link link" to="/gallery">Gallery</Link>
+                                <Link className="nav-link link" to="/">Gallery</Link>
                             </li>
                             <li className="nav-item">
-                                <Link className="nav-link link" to="/contact">Contact Us</Link>
+                                <Link className="nav-link link" to="contact">Contact Us</Link>
                             </li>
                             <div className="mx-3">
-                                <Link to="/login"><button type="button" className="nav-btns ">Login</button></Link>
-                                <Link to="/signup"><button type="button" className="nav-btns mx-2 ">Sign Up</button></Link>
+                                <Link to="login"><button type="button" className="nav-btns ">Login</button></Link>
+                                <Link to="signup"><button type="button" className="nav-btns mx-2 ">Sign Up</button></Link>
                             </div>
                         </ul>
                     </div>

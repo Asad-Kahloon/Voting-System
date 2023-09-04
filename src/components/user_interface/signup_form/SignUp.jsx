@@ -91,7 +91,7 @@ const SignUp = () => {
                           </form>
                           <div class="below_form">
                             <Link className="link">Forgot Password ?</Link>
-                            <Link className="link" to='/login'>Login</Link>
+                            <Link className="link" to='login'>Login</Link>
                           </div>
                 </div>
           </div>
